@@ -1,0 +1,7 @@
+{
+  "name": "E4_residual",
+  "description": "E3, predicting the departure from f-plane geostrophy (u - u_g)",
+  "rotate": true,
+  "crops": true,
+  "target": "residual"
+}

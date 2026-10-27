@@ -1,0 +1,10 @@
+{
+  "name": "C2_bc192_phys",
+  "rotate": true,
+  "crops": true,
+  "target": "residual",
+  "vort_weight": 0.5,
+  "div_weight": 0.5,
+  "base_channels": 192,
+  "description": "width 192 + vorticity/divergence penalties (0.5 each)"
+}

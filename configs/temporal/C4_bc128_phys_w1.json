@@ -1,0 +1,10 @@
+{
+  "name": "C4_bc128_phys_w1",
+  "rotate": true,
+  "crops": true,
+  "target": "residual",
+  "vort_weight": 1.0,
+  "div_weight": 1.0,
+  "base_channels": 128,
+  "description": "C1 with penalty weights 1.0"
+}

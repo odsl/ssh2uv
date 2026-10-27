@@ -1,0 +1,5 @@
+{
+  "name": "E1_rot",
+  "description": "E0 + random 90-degree rotations (fields and vectors)",
+  "rotate": true
+}

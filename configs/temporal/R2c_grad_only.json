@@ -1,0 +1,10 @@
+{
+  "name": "R2c_grad_only",
+  "rotate": true,
+  "crops": true,
+  "target": "residual",
+  "inputs": [
+    "grad"
+  ],
+  "description": "E4 with SSH gradients only"
+}

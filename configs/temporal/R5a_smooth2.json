@@ -1,0 +1,8 @@
+{
+  "name": "R5a_smooth2",
+  "rotate": true,
+  "crops": true,
+  "target": "residual",
+  "ug_smooth_px": 2.0,
+  "description": "E4 with geostrophy from SSH smoothed by a Gaussian of sigma 2 cells (4 km)"
+}

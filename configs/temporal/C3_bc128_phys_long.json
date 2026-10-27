@@ -1,0 +1,12 @@
+{
+  "name": "C3_bc128_phys_long",
+  "rotate": true,
+  "crops": true,
+  "target": "residual",
+  "vort_weight": 0.5,
+  "div_weight": 0.5,
+  "base_channels": 128,
+  "max_epochs": 100,
+  "patience": 20,
+  "description": "C1 trained longer (100 epochs, patience 20)"
+}

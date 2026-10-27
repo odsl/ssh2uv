@@ -1,0 +1,93 @@
+{
+  "experiment": {
+    "name": "ssha_sst_double_model",
+    "description": "SSHA follow-up: inputs=['Eta', 'theta'], double-model",
+    "tags": [
+      "ssha-followup",
+      "deep",
+      "double-model"
+    ],
+    "version": "3.2",
+    "output_dir": "runs/random_split/ssha_followup/ssha_sst_double_model"
+  },
+  "data": {
+    "zarr_source": null,
+    "mmap_dir": "data",
+    "data_format": "stacked",
+    "data_file": "global-final-64_stacked_DEEP.npy",
+    "channel_order": [
+      "Eta",
+      "windx",
+      "windy",
+      "theta",
+      "u1",
+      "v1"
+    ],
+    "input_vars": [
+      "Eta",
+      "theta"
+    ],
+    "output_vars": [
+      "u1",
+      "v1"
+    ],
+    "normalize": true,
+    "val_fraction": 0.2,
+    "temporal_split": true,
+    "exclude_zeros": false,
+    "ignore_nonfinite": true,
+    "max_timesteps": null
+  },
+  "model": {
+    "architecture": "unet",
+    "params": {
+      "base_channels": 192
+    }
+  },
+  "training": {
+    "epochs": 140,
+    "batch_size": 192,
+    "learning_rate": 0.0003,
+    "weight_decay": 1e-06,
+    "dir_weight": 0.04,
+    "loss_type": "mae",
+    "vort_weight": 0.0,
+    "div_weight": 0.0,
+    "speed_eps": 0.01,
+    "early_stop_patience": 35,
+    "target_loss": 0.0,
+    "amp": true,
+    "grad_clip_norm": 0.6,
+    "warmup_epochs": 8,
+    "seed": 42
+  },
+  "infrastructure": {
+    "num_gpus": 1,
+    "training_script": "scripts/random_split/train.py",
+    "num_workers": 8,
+    "prefetch_factor": 4,
+    "pin_memory": true
+  },
+  "wandb": {
+    "enabled": true,
+    "project": "ssh2uv-grad",
+    "entity": null,
+    "run_name": "ssha_sst_double_model",
+    "tags": [
+      "ssha-followup",
+      "deep",
+      "double-model"
+    ],
+    "offline": false,
+    "log_model": false
+  },
+  "slurm": {
+    "enabled": true,
+    "partition": "medium",
+    "time": "14:00:00",
+    "gres": "gpu:1",
+    "mem": "96G",
+    "cpus_per_task": 12,
+    "nodes": 1
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "R3a_mae",
+  "rotate": true,
+  "crops": true,
+  "target": "residual",
+  "loss": "mae",
+  "description": "E4 with MAE loss"
+}

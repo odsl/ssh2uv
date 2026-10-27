@@ -1,0 +1,10 @@
+{
+  "name": "C1_bc128_phys",
+  "rotate": true,
+  "crops": true,
+  "target": "residual",
+  "vort_weight": 0.5,
+  "div_weight": 0.5,
+  "base_channels": 128,
+  "description": "width 128 + vorticity/divergence penalties (0.5 each)"
+}

@@ -1,0 +1,8 @@
+{
+  "name": "R1b_bc192",
+  "rotate": true,
+  "crops": true,
+  "target": "residual",
+  "base_channels": 192,
+  "description": "E4 with base width 192"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "R3b_mse_phys",
+  "rotate": true,
+  "crops": true,
+  "target": "residual",
+  "vort_weight": 0.5,
+  "div_weight": 0.5,
+  "description": "E4 + vorticity and divergence penalties (normalised zeta/f, div/f; weight 0.5 each)"
+}

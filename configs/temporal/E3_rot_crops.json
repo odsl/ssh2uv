@@ -1,0 +1,6 @@
+{
+  "name": "E3_rot_crops",
+  "description": "E0 + rotations + random crops",
+  "rotate": true,
+  "crops": true
+}

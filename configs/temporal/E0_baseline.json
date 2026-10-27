@@ -1,0 +1,4 @@
+{
+  "name": "E0_baseline",
+  "description": "U-Net B=64, SSH gradients + SST + wind -> (u,v); fixed tiles, no augmentation"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "C5_bc128_phys_nosst",
+  "rotate": true,
+  "crops": true,
+  "target": "residual",
+  "vort_weight": 0.5,
+  "div_weight": 0.5,
+  "base_channels": 128,
+  "inputs": [
+    "grad",
+    "wind"
+  ],
+  "description": "C1 without SST (gradients + wind)"
+}

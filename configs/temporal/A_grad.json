@@ -1,0 +1,16 @@
+{
+  "name": "A_grad",
+  "rotate": true,
+  "crops": true,
+  "target": "residual",
+  "vort_weight": 0.5,
+  "div_weight": 0.5,
+  "base_channels": 128,
+  "max_epochs": 100,
+  "patience": 20,
+  "inputs": [
+    "grad"
+  ],
+  "loss": "mse",
+  "description": "Ablation on final setup (C3): SSH gradients only"
+}

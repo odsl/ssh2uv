@@ -1,0 +1,5 @@
+{
+  "name": "E2_crops",
+  "description": "E0 + random-position 64x64 crops from the stitched domain",
+  "crops": true
+}

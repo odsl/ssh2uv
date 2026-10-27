@@ -1,0 +1,9 @@
+{
+  "name": "R4_long",
+  "rotate": true,
+  "crops": true,
+  "target": "residual",
+  "max_epochs": 100,
+  "patience": 20,
+  "description": "E4 trained longer (100 epochs, patience 20)"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "E5_ug_input",
+  "description": "E3, with geostrophic velocity u_g added as input channels",
+  "rotate": true,
+  "crops": true,
+  "inputs": [
+    "grad",
+    "ug",
+    "sst",
+    "wind"
+  ]
+}

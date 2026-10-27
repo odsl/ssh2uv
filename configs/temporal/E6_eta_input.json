@@ -1,0 +1,11 @@
+{
+  "name": "E6_eta_input",
+  "description": "E3 with raw SSH instead of SSH gradients",
+  "rotate": true,
+  "crops": true,
+  "inputs": [
+    "eta",
+    "sst",
+    "wind"
+  ]
+}

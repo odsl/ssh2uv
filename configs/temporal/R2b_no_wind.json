@@ -1,0 +1,11 @@
+{
+  "name": "R2b_no_wind",
+  "rotate": true,
+  "crops": true,
+  "target": "residual",
+  "inputs": [
+    "grad",
+    "sst"
+  ],
+  "description": "E4 without wind stress (gradients + SST)"
+}
