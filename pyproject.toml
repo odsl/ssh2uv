@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ssh2uv"
+version = "0.1.0"
+description = "Inferring upper-ocean velocity from sea surface height with a U-Net (LLC4320, Cape Basin)"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.0",
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "matplotlib>=3.7",
+    "tqdm>=4.60",
+]
+
+[project.optional-dependencies]
+data = ["earthaccess>=0.10", "xarray>=2023.1", "h5netcdf>=1.0"]
+logging = ["wandb>=0.15"]
+dev = ["pytest>=7"]
+all = ["ssh2uv[data,logging,dev]"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
