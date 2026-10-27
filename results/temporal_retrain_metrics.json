@@ -1,0 +1,139 @@
+{
+  "split": {
+    "method": "temporal_blocks",
+    "n_hours": 10196,
+    "gap_hours": 48,
+    "hours": {
+      "train": [
+        0,
+        7137
+      ],
+      "val": [
+        7185,
+        8156
+      ],
+      "test": [
+        8204,
+        10196
+      ]
+    },
+    "n_samples": {
+      "train": 42822,
+      "val": 5826,
+      "test": 11952
+    },
+    "note": "test_indices = validation block (used for LR schedule / checkpoint selection); heldout_test_indices = final test block"
+  },
+  "geostrophic": {
+    "val": {
+      "rmse_u": 0.07119584828615189,
+      "rmse_v": 0.07504430413246155,
+      "rmse_speed": 0.07684075832366943,
+      "mean_dir_error_deg": 16.658748626708984,
+      "rmse_zeta_over_f": 0.2418440580368042,
+      "r_zeta": 0.7916086282247035,
+      "rmse_div_over_f": 0.10335126519203186,
+      "r_div": -1.364817116774816e-05,
+      "std_zeta_over_f_true": 0.3279246687889099,
+      "std_div_over_f_true": 0.10335108637809753,
+      "nrmse_zeta": 0.7374988253551699,
+      "nrmse_div": 1.0000017301601811,
+      "rmse_zeta": 2.4054778556252617e-05,
+      "rmse_div": 1.0279730740064442e-05
+    },
+    "test": {
+      "rmse_u": 0.06448385864496231,
+      "rmse_v": 0.06552704423666,
+      "rmse_speed": 0.06868164986371994,
+      "mean_dir_error_deg": 18.360183715820312,
+      "rmse_zeta_over_f": 0.20833347737789154,
+      "r_zeta": 0.7493265605690411,
+      "rmse_div_over_f": 0.0894954726099968,
+      "r_div": -8.050281547147349e-05,
+      "std_zeta_over_f_true": 0.2661254107952118,
+      "std_div_over_f_true": 0.0894954651594162,
+      "nrmse_zeta": 0.7828394769043977,
+      "nrmse_div": 1.0000000832509288,
+      "rmse_zeta": 2.0721681999797572e-05,
+      "rmse_div": 8.901578119785886e-06
+    }
+  },
+  "temporal": {
+    "checkpoint": "runs/random_split/temporal_retrain/grad_ab_sst_wind_bc192/checkpoint_best.pt",
+    "val": {
+      "rmse_u": 0.06359798461198807,
+      "rmse_v": 0.06350810825824738,
+      "rmse_speed": 0.0654173493385315,
+      "mean_dir_error_deg": 15.416439056396484,
+      "rmse_zeta_over_f": 0.16913433372974396,
+      "r_zeta": 0.8626266512441383,
+      "rmse_div_over_f": 0.09865420311689377,
+      "r_div": 0.3222731980206823,
+      "std_zeta_over_f_true": 0.3279246687889099,
+      "std_div_over_f_true": 0.10335108637809753,
+      "nrmse_zeta": 0.5157719129652253,
+      "nrmse_div": 0.954554098792723,
+      "rmse_zeta": 1.6822778186715546e-05,
+      "rmse_div": 9.81254213514439e-06
+    },
+    "test": {
+      "rmse_u": 0.060933418571949005,
+      "rmse_v": 0.06101347878575325,
+      "rmse_speed": 0.06455536186695099,
+      "mean_dir_error_deg": 18.27997589111328,
+      "rmse_zeta_over_f": 0.15391939878463745,
+      "r_zeta": 0.8218676152352972,
+      "rmse_div_over_f": 0.0879172533750534,
+      "r_div": 0.25525164979375936,
+      "std_zeta_over_f_true": 0.2661254107952118,
+      "std_div_over_f_true": 0.0894954651594162,
+      "nrmse_zeta": 0.5783716719298224,
+      "nrmse_div": 0.9823654552602016,
+      "rmse_zeta": 1.5309439823874192e-05,
+      "rmse_div": 8.744602114181464e-06
+    },
+    "test_by_days_after_training": {
+      "40-60 d": 0.06188518553972244,
+      "60-90 d": 0.06644734740257263
+    }
+  },
+  "random": {
+    "checkpoint": "runs/random_split/grad_bc192/grad_ab_sst_wind_bc192/checkpoint_best.pt",
+    "val": {
+      "rmse_u": 0.008721021004021168,
+      "rmse_v": 0.008648600429296494,
+      "rmse_speed": 0.008807824924588203,
+      "mean_dir_error_deg": 1.8721727132797241,
+      "rmse_zeta_over_f": 0.0391823835670948,
+      "r_zeta": 0.992846253422494,
+      "rmse_div_over_f": 0.03682331368327141,
+      "r_div": 0.9344113372324695,
+      "std_zeta_over_f_true": 0.3279246687889099,
+      "std_div_over_f_true": 0.10335108637809753,
+      "nrmse_zeta": 0.1194859286183105,
+      "nrmse_div": 0.35629343603179686,
+      "rmse_zeta": 3.897236788299269e-06,
+      "rmse_div": 3.662594249984516e-06
+    },
+    "test": {
+      "rmse_u": 0.008496075868606567,
+      "rmse_v": 0.008594103157520294,
+      "rmse_speed": 0.00861521065235138,
+      "mean_dir_error_deg": 2.33540415763855,
+      "rmse_zeta_over_f": 0.038794487714767456,
+      "r_zeta": 0.9893266413365213,
+      "rmse_div_over_f": 0.03781174123287201,
+      "r_div": 0.9063894186793278,
+      "std_zeta_over_f_true": 0.2661254107952118,
+      "std_div_over_f_true": 0.0894954651594162,
+      "nrmse_zeta": 0.145775210262129,
+      "nrmse_div": 0.42249896310968194,
+      "rmse_zeta": 3.8586551133705305e-06,
+      "rmse_div": 3.7609072125503505e-06
+    },
+    "test_by_days_after_training": {
+      "40-60 d": 0.00829032901674509,
+      "60-90 d": 0.00800305139273405
+    }
+  }
+}
