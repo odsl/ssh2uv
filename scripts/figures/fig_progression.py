@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Test error of the temporal-split experiments, from baseline to final model (paper Figure 4).
+"""Test error of the temporal-split experiments, from baseline to final model (paper Figure 3).
 
 Dots: mean test RMSE of speed over seeds (error bars: one standard deviation);
 dashed line: the f-plane geostrophic estimate.

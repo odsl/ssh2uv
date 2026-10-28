@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Velocity on a representative test patch (paper Figure 5).
+"""Velocity on a representative test patch (paper Figure 4).
 
 Columns: LLC4320 truth | geostrophic estimate | baseline U-Net (E0) | final U-Net (C3)
 Rows: u, v (shared color scale per row) and the vector error |u_pred - u_true|.

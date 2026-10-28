@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Evaluate the random-split models of the earlier version on their random-split validation set.
+"""Evaluate the random-split models on their random-split validation set.
 
-Used for the leakage analysis (Section 4.1, Fig. 3a). For every model in
+Used for the comparison in Appendix B (Fig. 8a). For every model in
 ``ssh2uv.evaluation.PAPER_MODELS`` and for an f-plane
 geostrophic baseline, this computes velocity RMSEs and the RMSE / Pearson r of
 zeta/f and (div u)/f on the validation split, using the 2 km analysis grid and

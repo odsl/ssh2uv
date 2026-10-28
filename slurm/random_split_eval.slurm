@@ -6,7 +6,7 @@
 #SBATCH --mem=96G
 #SBATCH --time=01:00:00
 #SBATCH --gres=gpu:1
-# Leakage analysis (Section 4.1): evaluate the random-split models on their validation
+# Random versus temporal split (Appendix B): evaluate the random-split models on their validation
 # set, and the Grad+All configuration (random split and temporal retrain) on the
 # blocks of the temporal split. From the repository root:
 #   VENV_PATH=/path/to/venv sbatch slurm/random_split_eval.slurm

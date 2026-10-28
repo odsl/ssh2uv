@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Joint PDF of vorticity and strain (paper Figure 7), after Balwada et al. (2021).
+"""Joint PDF of vorticity and strain (paper Figure 6), after Balwada et al. (2021).
 
 x: zeta/f with signed f (zeta/f > 0 is cyclonic; f < 0 here)
 y: sigma/|f|, sigma = sqrt((u_x - v_y)^2 + (u_y + v_x)^2) >= 0

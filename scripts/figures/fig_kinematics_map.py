@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""Vorticity and divergence maps for one validation patch (paper Figure 4).
+"""Vorticity and divergence maps for one test patch (paper Figure 5).
 
 Rows: zeta/f and (div u)/f (signed f, so zeta/f > 0 is cyclonic).
 Columns: LLC4320 truth | f-plane geostrophic estimate from SSH | U-Net prediction.
 The patch shown is the test sample whose per-patch r(zeta) for the U-Net is
 closest to the median over the test block, so it is representative rather than
-a best case (paper Figure 6). Reads the arrays written by scripts/predict.py and
+a best case. Reads the arrays written by scripts/predict.py and
 writes the chosen sample to <out>_sample.json for fig_predictions.py.
 
 Usage:

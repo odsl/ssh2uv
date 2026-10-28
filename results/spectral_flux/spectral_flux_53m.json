@@ -1,0 +1,68 @@
+{
+  "block": "test",
+  "data_file": "global-final-64_stacked_DEEP.npy",
+  "hours": 1992,
+  "alpha": 0.25,
+  "checkpoints": {
+    "c3": [
+      "runs/temporal/C3_bc128_phys_long/seed0/checkpoint_best.pt",
+      "runs/temporal/C3_bc128_phys_long/seed1/checkpoint_best.pt",
+      "runs/temporal/C3_bc128_phys_long/seed2/checkpoint_best.pt"
+    ],
+    "e0": [
+      "runs/temporal/E0_baseline/seed0/checkpoint_best.pt",
+      "runs/temporal/E0_baseline/seed1/checkpoint_best.pt",
+      "runs/temporal/E0_baseline/seed2/checkpoint_best.pt"
+    ]
+  },
+  "full_domain_metrics": {
+    "geostrophic": {
+      "rmse_u": 0.06290242673719137,
+      "rmse_v": 0.06426783673263282,
+      "rmse_speed": 0.06665829671028875,
+      "mean_dir_error_deg": 18.180237028281017
+    },
+    "c3_seed0": {
+      "rmse_u": 0.044538364092267024,
+      "rmse_v": 0.04470092439511614,
+      "rmse_speed": 0.04670895628012644,
+      "mean_dir_error_deg": 13.488073778230314
+    },
+    "c3_seed1": {
+      "rmse_u": 0.044994888701368675,
+      "rmse_v": 0.04523169837791467,
+      "rmse_speed": 0.0479187604596387,
+      "mean_dir_error_deg": 13.471024702131471
+    },
+    "c3_seed2": {
+      "rmse_u": 0.04473596518830147,
+      "rmse_v": 0.04490906728487209,
+      "rmse_speed": 0.0471896533887781,
+      "mean_dir_error_deg": 13.457053197033764
+    },
+    "e0_seed0": {
+      "rmse_u": 0.05958630648012456,
+      "rmse_v": 0.06204499760181003,
+      "rmse_speed": 0.06581935497741531,
+      "mean_dir_error_deg": 18.17816855878137
+    },
+    "e0_seed1": {
+      "rmse_u": 0.060960649049057805,
+      "rmse_v": 0.06524823217336304,
+      "rmse_speed": 0.06729541646820353,
+      "mean_dir_error_deg": 18.980293928082496
+    },
+    "e0_seed2": {
+      "rmse_u": 0.06062540119674608,
+      "rmse_v": 0.06182829381315259,
+      "rmse_speed": 0.06506147737523285,
+      "mean_dir_error_deg": 18.283743558646165
+    }
+  },
+  "total_transfer": {
+    "truth": -8.675234790949134e-09,
+    "geostrophic": -3.1048505783744224e-09,
+    "c3": -4.974450897851678e-09,
+    "e0": -1.7293029283561531e-09
+  }
+}

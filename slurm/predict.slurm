@@ -7,7 +7,7 @@
 #SBATCH --time=00:30:00
 #SBATCH --gres=gpu:1
 # Cache test-block predictions of the final (C3) and baseline (E0) models, seed 0,
-# for Figures 5-7. From the repository root:
+# for Figures 4-6. From the repository root:
 #   VENV_PATH=/path/to/venv sbatch slurm/predict.slurm
 source slurm/common.sh
 python scripts/predict.py --block test --out outputs/test_predictions \

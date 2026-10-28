@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Leakage diagnostics for the random patch split (paper Figure 3).
+"""Leakage diagnostics for the random patch split (paper Figure 8, Appendix B).
 
 (a) Validation error of the random-split models as a function of the time to the
     nearest training patch of the same subdomain, with the geostrophic estimate

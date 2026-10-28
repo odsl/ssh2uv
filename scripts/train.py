@@ -31,7 +31,7 @@ DEFAULTS = {
     "rotate": False, "crops": False, "loss": "mse",
     "lr": 3e-4, "weight_decay": 1e-4, "batch_size": 128, "max_epochs": 60,
     "patience": 10, "warmup_epochs": 2, "ug_smooth_px": 0.0, "vort_weight": 0.0, "div_weight": 0.0,
-    "data_dir": "data", "split": "data/temporal_split/global-final-64_master_metadata.json",
+    "data_dir": "data", "data_file": "global-final-64_stacked_DEEP.npy", "split": "data/temporal_split/global-final-64_master_metadata.json",
 }
 
 
@@ -81,7 +81,7 @@ def main():
     # ---------------- data ----------------
     t0 = time.time()
     hours = load_split_hours(cfg["split"])
-    dom = {k: load_domains(cfg["data_dir"], hours[k]).to(device) for k in ("train", "val", "test")}
+    dom = {k: load_domains(cfg["data_dir"], hours[k], cfg["data_file"]).to(device) for k in ("train", "val", "test")}
     print(f"[data] loaded {[tuple(d.shape) for d in dom.values()]} in {time.time() - t0:.0f}s", flush=True)
 
     # statistics from (augmented) training samples only

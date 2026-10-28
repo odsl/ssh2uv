@@ -1,0 +1,20 @@
+{
+  "block": "val",
+  "data_file": "global-final-64_stacked_FULL.npy",
+  "geostrophic": {
+    "rmse_u": 0.13431896269321442,
+    "rmse_v": 0.11197291314601898,
+    "rmse_speed": 0.1219753548502922,
+    "mean_dir_error_deg": 29.326175689697266,
+    "rmse_zeta_over_f": 0.23873676359653473,
+    "r_zeta": 0.8061390393384874,
+    "rmse_div_over_f": 0.14086796343326569,
+    "r_div": -1.7575449162635908e-05,
+    "std_zeta_over_f_true": 0.3670220971107483,
+    "std_div_over_f_true": 0.14086668193340302,
+    "nrmse_zeta": 0.6504697277790779,
+    "nrmse_div": 1.0000090972531268,
+    "rmse_zeta": 2.3745714607042906e-05,
+    "rmse_div": 1.4011291795069957e-05
+  }
+}

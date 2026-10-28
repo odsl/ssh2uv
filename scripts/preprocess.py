@@ -19,6 +19,7 @@ Output
   {prefix}_{var}.npy               individual variable arrays
   {prefix}_{var}_metadata.json     per-patch metadata
   {prefix}_stacked_DEEP.npy        (N, 6, 64, 64)  channels: [Eta, windx, windy, theta, u1, v1]
+  {prefix}_stacked_FULL.npy        (N, 6, 64, 64)  channels: [Eta, windx, windy, theta, u0, v0]
   {prefix}_preprocess_metadata.json  config + temporal train/test indices (not used by default)
 
 Usage
@@ -408,10 +409,12 @@ def main() -> None:
     with open(f"{OUTPUT_PREFIX}_preprocess_metadata.json", "w") as f:
         json.dump(master, f, indent=2)
 
-    # Raw-SSH stack used by the SSH-input models, the geostrophic baseline and figures
-    deep_ssh = np.stack([all_segs[v] for v in ["Eta"] + COMBO_DEEP_VARS], axis=1)
-    np.save(f"{OUTPUT_PREFIX}_stacked_DEEP.npy", deep_ssh)
-    print(f"Saved {OUTPUT_PREFIX}_stacked_DEEP.npy  shape={deep_ssh.shape}")
+    # Raw-SSH stacks read by the main pipeline: target at 53 m (DEEP) and at 0.5 m (FULL)
+    for tag, combo in (("DEEP", COMBO_DEEP_VARS), ("FULL", COMBO_FULL_VARS)):
+        stack = np.stack([all_segs[v] for v in ["Eta"] + combo], axis=1)
+        np.save(f"{OUTPUT_PREFIX}_stacked_{tag}.npy", stack)
+        print(f"Saved {OUTPUT_PREFIX}_stacked_{tag}.npy  shape={stack.shape}")
+        del stack
 
     print(f"\n{'='*60}")
     print("Done.")

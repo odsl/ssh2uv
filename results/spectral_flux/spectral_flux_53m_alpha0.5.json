@@ -1,0 +1,30 @@
+{
+  "block": "test",
+  "data_file": "global-final-64_stacked_DEEP.npy",
+  "hours": 1992,
+  "alpha": 0.5,
+  "checkpoints": {
+    "c3": [
+      "runs/temporal/C3_bc128_phys_long/seed0/checkpoint_best.pt"
+    ]
+  },
+  "full_domain_metrics": {
+    "geostrophic": {
+      "rmse_u": 0.06290242673719137,
+      "rmse_v": 0.06426783673263282,
+      "rmse_speed": 0.06665829671028875,
+      "mean_dir_error_deg": 18.180237028281017
+    },
+    "c3_seed0": {
+      "rmse_u": 0.044538364092267024,
+      "rmse_v": 0.04470092439511614,
+      "rmse_speed": 0.04670895628012644,
+      "mean_dir_error_deg": 13.488073778230314
+    }
+  },
+  "total_transfer": {
+    "truth": -6.954516934358365e-09,
+    "geostrophic": -3.3894441755180693e-09,
+    "c3": -4.3407817082079375e-09
+  }
+}

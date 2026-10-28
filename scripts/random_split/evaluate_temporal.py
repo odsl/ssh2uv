@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Evaluate random-split-pipeline checkpoints on the blocks of the temporal split.
 
-Used for the leakage analysis (Section 4.1, Fig. 3b) and for the geostrophic reference
+Used for the leakage analysis (Appendix B, Fig. 8b) and for the geostrophic reference
 on the validation and test blocks.
 
 For each checkpoint, reports velocity and kinematic metrics on the validation and

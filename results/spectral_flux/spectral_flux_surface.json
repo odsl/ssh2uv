@@ -1,0 +1,68 @@
+{
+  "block": "test",
+  "data_file": "global-final-64_stacked_FULL.npy",
+  "hours": 1992,
+  "alpha": 0.25,
+  "checkpoints": {
+    "c3": [
+      "runs/temporal/S_C3_bc128_phys_long/seed0/checkpoint_best.pt",
+      "runs/temporal/S_C3_bc128_phys_long/seed1/checkpoint_best.pt",
+      "runs/temporal/S_C3_bc128_phys_long/seed2/checkpoint_best.pt"
+    ],
+    "e0": [
+      "runs/temporal/S_E0_baseline/seed0/checkpoint_best.pt",
+      "runs/temporal/S_E0_baseline/seed1/checkpoint_best.pt",
+      "runs/temporal/S_E0_baseline/seed2/checkpoint_best.pt"
+    ]
+  },
+  "full_domain_metrics": {
+    "geostrophic": {
+      "rmse_u": 0.13839756731385836,
+      "rmse_v": 0.11070448290867392,
+      "rmse_speed": 0.12342081736236245,
+      "mean_dir_error_deg": 35.056165442755315
+    },
+    "c3_seed0": {
+      "rmse_u": 0.047110092521211684,
+      "rmse_v": 0.04728827068175549,
+      "rmse_speed": 0.04936455495418361,
+      "mean_dir_error_deg": 11.635437902664965
+    },
+    "c3_seed1": {
+      "rmse_u": 0.04834555760919786,
+      "rmse_v": 0.04831155251887847,
+      "rmse_speed": 0.05122919667588679,
+      "mean_dir_error_deg": 11.737911921881608
+    },
+    "c3_seed2": {
+      "rmse_u": 0.04747750016087485,
+      "rmse_v": 0.048395654284609325,
+      "rmse_speed": 0.05002300808091503,
+      "mean_dir_error_deg": 11.847416825070495
+    },
+    "e0_seed0": {
+      "rmse_u": 0.06438050161869714,
+      "rmse_v": 0.06562149475172604,
+      "rmse_speed": 0.0678569806771117,
+      "mean_dir_error_deg": 16.159075654199935
+    },
+    "e0_seed1": {
+      "rmse_u": 0.06693030977315761,
+      "rmse_v": 0.0662447333405095,
+      "rmse_speed": 0.0696901958600797,
+      "mean_dir_error_deg": 16.453770753903743
+    },
+    "e0_seed2": {
+      "rmse_u": 0.06628589129110173,
+      "rmse_v": 0.0697025620463599,
+      "rmse_speed": 0.07191332369809471,
+      "mean_dir_error_deg": 16.676964634965902
+    }
+  },
+  "total_transfer": {
+    "truth": -9.902844950957105e-10,
+    "geostrophic": -3.1048505783744224e-09,
+    "c3": -1.8974202587917734e-09,
+    "e0": -8.346713590513593e-09
+  }
+}

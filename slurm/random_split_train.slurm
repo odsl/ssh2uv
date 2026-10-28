@@ -6,7 +6,7 @@
 #SBATCH --mem=128G
 #SBATCH --time=18:00:00
 #SBATCH --gres=gpu:1
-# Train one model of the earlier random-split version (leakage analysis, Section 4.1).
+# Train one random-split model (comparison in Appendix B).
 #   VENV_PATH=/path/to/venv CONFIG=configs/random_split/grad_bc192/grad_ab_sst_wind_bc192.json \
 #       sbatch slurm/random_split_train.slurm
 # The output directory is set in the config (runs/random_split/...).

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Training script of the earlier (random-split) version of the study.
+"""Training script for the random-split comparison.
 
-Used in the paper only for the leakage analysis (Section 4.1): the random-split models
+Used in the paper only for Appendix B: the random-split models
 and the same configuration retrained on the temporal split. Without a split file in the
 data directory, the loader falls back to a random 80/20 split of patches (seed 42).
 
